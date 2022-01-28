@@ -4,9 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,7 +15,11 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    private String name;
+    @GeneratedValue(generator = "UUID")
+    @Column(name = "u_id")
+    private UUID id;
+
+    private String username;
 
     private String password;
 

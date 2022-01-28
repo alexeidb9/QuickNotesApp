@@ -41,6 +41,14 @@
             <version>2.6.3</version>
         </dependency>
 
+        <!-- View -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+
         <!-- Database -->
 
         <dependency>
